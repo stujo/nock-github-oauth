@@ -39,6 +39,7 @@ lab.experiment('module that depends on GitHub OAuth', function() {
 	lab.after(function(done) {
 		// Remove all intercepts
 		nock.cleanAll();
+		done();
 	});
 });
 ```
